@@ -25,3 +25,12 @@ SELECT * FROM accounts WHERE balance > 10000;
 
 --9/ Display accounts with a balance ≤ 0
 SELECT * FROM accounts WHERE balance <= 0;
+
+--10/ Display debit transactions
+SELECT * FROM transactions WHERE transaction_type = "debit";
+
+--11/ Display transactions of type "credit"
+SELECT * FROM transactions WHERE transaction_type = "credit";
+
+--12/ Display transactions for account_id = 1
+SELECT * FROM transactions WHERE account_id = 1;
