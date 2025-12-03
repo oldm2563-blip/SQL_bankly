@@ -67,3 +67,12 @@ SELECT * FROM transactions ORDER BY transaction_date DESC LIMIT 3;
 
 --23/ Display each account with the customer name and the advisor name (JOIN)
 SELECT accounts.account_id, accounts.account_number, accounts.balance, accounts.account_type, customers.full_name, advisors.full_name FROM accounts JOIN customers ON accounts.customers_id = customers.customer_id JOIN advisors ON  accounts.advisors_id = advisors.advisors_id;
+
+--24/ Count the number of transactions per account
+SELECT COUNT(*) AS tota_transaction FROM transactions GROUP BY account_id;
+
+--25/ Display the total balance of all accounts for a customer
+SELECT SUM(balance) AS total_balance FROM accounts;
+
+--26/ Add a `created_at` column to Accounts
+ALTER TABLE Accounts ADD column created_at date;
