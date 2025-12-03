@@ -34,3 +34,12 @@ SELECT * FROM transactions WHERE transaction_type = "credit";
 
 --12/ Display transactions for account_id = 1
 SELECT * FROM transactions WHERE account_id = 1;
+
+--13/ Display customers whose account is managed by advisor_id = 2
+SELECT customers.*, accounts.advisors_id FROM CUSTOMERS JOIN accounts ON customers.customer_id = accounts.customers_id WHERE advisors_id = 2;
+
+--14/ Display accounts with account_type = "Savings"
+SELECT * FROM accounts WHERE account_type = "Savings";
+
+--15/ Display transactions with an amount ≥ 500
+SELECT * FROM transactions WHERE ammount >= 500;
