@@ -43,4 +43,10 @@ INSERT INTO customers VALUES(full_name, email, phone, registration_date)
                                ('michal jackson','jackson41@outlook.com','5551234562','1993-06-12'),
                                ('peter parker','imnotspiderman12@gmail.com','08766372792','2002-09-30'),
                                ('Tony Stark','tonystark12@gmail.com','08763455667','2005-01-20');
-                               
+
+
+INSERT INTO `advisors` VALUES ('walter white','hisenberg00@gmail.com'),
+                              ('Vergil','power32@gmail.com'),
+                              ('harry potter','wizard21@hogwards.ho');
+
+
