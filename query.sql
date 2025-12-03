@@ -16,3 +16,12 @@ SELECT * FROM accounts;
 
 --6/ Show only account_number
 SELECT account_number FROM accounts;
+
+--7/ Show all transactions
+SELECT * FROM transactions;
+
+--8/ Show accounts with a balance > 10000
+SELECT * FROM accounts WHERE balance > 10000;
+
+--9/ Display accounts with a balance ≤ 0
+SELECT * FROM accounts WHERE balance <= 0;
