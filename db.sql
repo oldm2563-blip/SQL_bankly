@@ -26,3 +26,12 @@ CREATE TABLE accounts(
     advisors_id int,
     FOREIGN KEY (advisors_id) REFERENCES advisors (advisors_id)
 );
+
+CREATE TABLE transactions(
+    transaction_id int PRIMARY KEY AUTO_INCREMENT,
+    ammount float,
+    transaction_type enum('debit','credit'),
+    transaction_date datetime,
+    account_id int,
+    FOREIGN KEY (account_id) REFERENCES accounts (account_id)
+);
