@@ -50,3 +50,9 @@ INSERT INTO `advisors` VALUES ('walter white','hisenberg00@gmail.com'),
                               ('harry potter','wizard21@hogwards.ho');
 
 
+INSERT INTO `accounts` VALUES (1001,2501,'Checking',1,1),
+                              (1002,2501,'Savings',2,1),
+                              (1003,501,'Business',3,3),
+                              (1004,1501,'Business',4,2),
+                              (1005,101,'Checking',5,1),
+                              (1006,3400,'Checking',1,3);
